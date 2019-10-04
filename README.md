@@ -29,6 +29,16 @@ A search query is taken as input & then processed in the following order:-
 
 Now, we have the filtered string which'll be searched in the sample database.<br />
 Sample database consists of a .txt file which has certain links to be parsed & searched for.<br />
+```python
+  resp = urllib.request.urlopen(url)
+  html = resp.read()
+  except urllib.error.URLError as e:
+              contents = e.read()
+            soup = BeautifulSoup(html,"html.parser")                        
+            for script in soup(["script", "style"]):
+                script.extract()   
+            text = soup.get_text()  
+```
 
 The links are opened & searched via KMP Algorithm for pattern matching.<br /><br />
 
