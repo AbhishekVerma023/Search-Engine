@@ -67,6 +67,6 @@ Before running, make sure you have the required libraries installed.
 
 ## Built With
 
-* [Anaconda](https://www.anaconda.com/distribution/) - The all in one place for Python
-* [Spyder IDE](https://www.spyder-ide.org/) - The Python IDE
+* [Google Colab](https://colab.research.google.com/) - The all in one place for Python
+
 
