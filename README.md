@@ -49,3 +49,24 @@ By this normalization score, we calculate the relevance of the links. Now, we di
 <br /> <br />
 
 Before running, make sure you have the required libraries installed.
+```python
+  import nltk
+  import math 
+  import urllib.request
+  from nltk.corpus import stopwords
+  from nltk.tokenize import word_tokenize
+  from nltk.stem import PorterStemmer
+  from nltk.tokenize import word_tokenize
+  from bs4 import BeautifulSoup
+  from KMP import KMPSearch
+
+  nltk.download('stopwords')
+  nltk.download('punkt')
+
+```
+
+## Built With
+
+* [Anaconda](https://www.anaconda.com/distribution/) - The all in one place for Python
+* [Spyder IDE](https://www.spyder-ide.org/) - The Python IDE
+
