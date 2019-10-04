@@ -3,10 +3,29 @@ Implementation of KMP algorithm for creating a search engine
 
 ## Introduction
 A search query is taken as input & then processed in the following order:-
-
+```python
+  string = input("Enter the search query : ")
+```  
 1)Tokenized using nltk word tokenize<br />
+```python
+  from nltk.tokenize import word_tokenize
+  nltk.download('punkt')
+  tokens = nltk.word_tokenize(string)
+```  
 2)Removed the articles, pronouns & prepositions using stopwords<br />
+```python
+  from nltk.corpus import stopwords
+  nltk.download('stopwords')
+  stop_words = set(stopwords.words("english"))
+  ```
 3)Removed the affixes using stemmer<br />
+```python
+  from nltk.stem import PorterStemmer
+  ps = PorterStemmer()
+  stemmed_string = []
+  for w in filtered_string:
+       stemmed_string.append(ps.stem(w))
+```
 
 Now, we have the filtered string which'll be searched in the sample database.<br />
 Sample database consists of a .txt file which has certain links to be parsed & searched for.<br />
